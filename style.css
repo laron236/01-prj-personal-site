@@ -1,1 +1,114 @@
 /* Add you CSS here */
+/* Reset/Global Styles */
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: #C4CED4;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+/* Logos */
+.logo {
+  /* Make the logo height about 33% of the header height */
+  height: 33%;
+  width: auto; /* Keep the image's aspect ratio */
+  position: absolute;
+  top: 1rem;
+}
+
+.logo.left {
+  left: 1rem;
+}
+
+.logo.right {
+  right: 1rem;
+}
+
+/* Nav */
+nav {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #C4CED4;
+}
+
+/* Section Layouts */
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #111;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+#contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #C4CED4;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.footer-logo {
+  width: 50px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}

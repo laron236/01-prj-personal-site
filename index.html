@@ -2,10 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Sean Heller | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- Header with Logos and Photo -->
+  <header>
+    <!-- 
+      Left logo image 
+      Make sure the file "spurs.png" is inside a folder named "img" in your project.
+      If the image does not show, check the file name and folder location.
+    -->
+    <img src="./img/spurs.png" alt="Spurs Logo" class="logo left">
+    <!-- 
+      Right logo image 
+      Make sure "usf.png" is also in the "img" folder.
+    -->
+    <img src="./img/usf.png" alt="USF Logo" class="logo right">
+    <!-- 
+      Profile photo 
+      Check that "profile.jpg" is in the "img" folder.
+    -->
+    <img src="./img/profile.jpg" alt="Sean Heller Photo" class="profile-pic">
+    <h1>Sean Heller</h1>
+    <p>Web Development Student at USF</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a college student studying Information Science with a focus on web development. I love building clean and functional websites and I’m excited to keep learning and growing as a developer.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript (beginner)</li>
+      <li>Responsive Design</li>
+      <li>Version Control (Git)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Here is where I’ll showcase my web development projects throughout this course.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- Updated email address to seanheller@usf.edu -->
+    <p>Email: <a href="mailto:seanheller@usf.edu">seanheller@usf.edu</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sean Heller. All rights reserved.</p>
+    <!-- 
+      Footer logo image 
+      This should also be in the "img" folder.
+    -->
+    <img src="./img/spurs.png" alt="Spurs Logo" class="footer-logo">
+  </footer>
+
 </body>
 </html>
