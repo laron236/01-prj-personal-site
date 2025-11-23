@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Sean Heller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with Logos and Photo (same as index.html) -->
+  <header>
+    <!-- Left logo image -->
+    <img src="./img/spurs.png" alt="Spurs Logo" class="logo left">
+    <!-- Right logo image -->
+    <img src="./img/usf.png" alt="USF Logo" class="logo right">
+    <!-- Profile photo -->
+    <img src="./img/profile.jpg" alt="Sean Heller Photo" class="profile-pic">
+    <h1>Sean Heller</h1>
+    <p>Web Development Student at USF</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="https://1drv.ms/w/c/910ca78c64a62049/IQBJIKZkjKcMIICRiwIAAAAAAaeC5ozNyCKsUYGUPTPYcnY?e=0jS1De">Resume</a>
+  </nav>
+
+  <!-- Contact form section -->
+  <section id="contact-form">
+    <h2>Contact Me</h2>
+    <!-- Form uses mailto for a simple setup. For reliable delivery use a backend or form service. -->
+    <form method="POST" action="mailto:seanheller@usf.edu" enctype="text/plain">
+      
+      <!-- Name field -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <!-- Email field -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <!-- Company field -->
+      <label for="company">Company</label>
+      <input type="text" id="company" name="Company">
+
+      <!-- Topic field -->
+      <label for="topic">Topic</label>
+      <input type="text" id="topic" name="Topic" required>
+
+      <!-- Message field -->
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="6" required></textarea>
+
+      <!-- Submit button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sean Heller. All rights reserved.</p>
+    <img src="./img/spurs.png" alt="Spurs Logo" class="footer-logo">
+  </footer>
+
+</body>
+</html>
