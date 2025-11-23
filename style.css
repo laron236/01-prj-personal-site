@@ -99,18 +99,27 @@ ul {
 
 /* Footer */
 footer {
-  background-color: #1a1a1a;
-  color: #C4CED4;
   text-align: center;
-  padding: 1rem;
-  position: relative;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #f0f0f0;
 }
 
-.footer-logo {
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footer logo */
+footer .footer-logo {
   width: 50px;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  height: auto;
+  margin-top: 10px;
 }
 
 /* Contact form styling */
@@ -157,5 +166,69 @@ footer {
 
 /* Change button color when hovering */
 #contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Projects Section - Simple Card Layout */
+
+/* Container for each project card */
+.project-card {
+  /* Add space around each project */
+  margin: 20px 0;
+  padding: 15px;
+  /* Add a light border around each project */
+  border: 1px solid #ddd;
+  /* Slightly rounded corners */
+  border-radius: 5px;
+}
+
+/* Project thumbnail image */
+.project-thumb {
+  /* Make image fit the width of the card */
+  width: 100%;
+  /* Keep image height proportional */
+  max-width: 300px;
+  height: auto;
+  /* Add space below the image */
+  margin-bottom: 15px;
+  /* Slightly rounded corners on image */
+  border-radius: 5px;
+}
+
+/* Project title */
+.project-card h3 {
+  /* Add space above and below the title */
+  margin: 10px 0;
+}
+
+/* Project description text */
+.project-card p {
+  /* Add space below the description */
+  margin-bottom: 15px;
+  /* Make text easier to read */
+  line-height: 1.6;
+}
+
+/* Style the "View Live" button */
+.project-button {
+  /* Make the link look like a button */
+  display: inline-block;
+  /* Add padding inside the button */
+  padding: 10px 15px;
+  /* Blue background color */
+  background-color: #007bff;
+  /* White text color */
+  color: white;
+  /* Remove underline from link */
+  text-decoration: none;
+  /* Slightly rounded corners */
+  border-radius: 5px;
+  /* Make text smaller */
+  font-size: 14px;
+}
+
+/* Change button color when hovering over it */
+.project-button:hover {
+  /* Darker blue when hovering */
   background-color: #0056b3;
 }
