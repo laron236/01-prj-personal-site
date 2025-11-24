@@ -215,20 +215,43 @@ footer .footer-logo {
   display: inline-block;
   /* Add padding inside the button */
   padding: 10px 15px;
-  /* Blue background color */
-  background-color: #007bff;
-  /* White text color */
-  color: white;
+  /* Dark gray background to match header theme */
+  background-color: #1a1a1a;
+  /* Light gray text to match header text */
+  color: #C4CED4;
   /* Remove underline from link */
   text-decoration: none;
   /* Slightly rounded corners */
   border-radius: 5px;
   /* Make text smaller */
   font-size: 14px;
+  /* Add a border to make it stand out */
+  border: 2px solid #C4CED4;
 }
 
 /* Change button color when hovering over it */
 .project-button:hover {
+  /* Lighter gray background when hovering */
+  background-color: #C4CED4;
+  /* Dark text when hovering */
+  color: #1a1a1a;
+}
+
+/* Back to top button styling */
+/* Style the back to top link */
+.back-to-top {
+  /* Blue color to match other links */
+  color: #007bff;
+  /* Remove underline from link */
+  text-decoration: none;
+  /* Add space around the link */
+  padding: 5px 10px;
+}
+
+/* Change color when hovering over the button */
+.back-to-top:hover {
   /* Darker blue when hovering */
-  background-color: #0056b3;
+  color: #0056b3;
+  /* Add underline when hovering */
+  text-decoration: underline;
 }
