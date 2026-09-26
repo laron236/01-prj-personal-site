@@ -88,13 +88,51 @@ ul {
   padding-left: 1.5rem;
 }
 
-#contact a {
-  color: #0066cc;
-  text-decoration: none;
+/* Contact section */
+.contact-section {
+  text-align: center;
 }
 
-#contact a:hover {
-  text-decoration: underline;
+.contact-links {
+  max-width: 760px;
+  margin: 2rem auto 0;
+}
+
+.contact-link {
+  display: block;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  border-color: #777;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+.contact-label,
+.contact-value {
+  display: block;
+}
+
+.contact-label {
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-email .contact-value {
+  overflow-wrap: anywhere;
 }
 
 /* Footer */
@@ -169,71 +207,58 @@ footer .footer-logo {
   background-color: #0056b3;
 }
 
-/* Projects Section - Simple Card Layout */
+/* Projects Section */
+#projects {
+  max-width: 800px;
+}
 
 /* Container for each project card */
 .project-card {
-  /* Add space around each project */
   margin: 20px 0;
-  padding: 15px;
-  /* Add a light border around each project */
-  border: 1px solid #ddd;
-  /* Slightly rounded corners */
-  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
 /* Project thumbnail image */
 .project-thumb {
-  /* Make image fit the width of the card */
+  display: block;
   width: 100%;
-  /* Keep image height proportional */
-  max-width: 300px;
+  max-width: 320px;
   height: auto;
-  /* Add space below the image */
   margin-bottom: 15px;
-  /* Slightly rounded corners on image */
-  border-radius: 5px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
 }
 
 /* Project title */
 .project-card h3 {
-  /* Add space above and below the title */
   margin: 10px 0;
 }
 
 /* Project description text */
 .project-card p {
-  /* Add space below the description */
   margin-bottom: 15px;
-  /* Make text easier to read */
   line-height: 1.6;
 }
 
 /* Style the "View Live" button */
 .project-button {
-  /* Make the link look like a button */
   display: inline-block;
-  /* Add padding inside the button */
   padding: 10px 15px;
-  /* Dark gray background to match header theme */
   background-color: #1a1a1a;
-  /* Light gray text to match header text */
   color: #C4CED4;
-  /* Remove underline from link */
   text-decoration: none;
-  /* Slightly rounded corners */
   border-radius: 5px;
-  /* Make text smaller */
   font-size: 14px;
-  /* Add a border to make it stand out */
   border: 2px solid #C4CED4;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Change button color when hovering over it */
 .project-button:hover {
-  /* Lighter gray background when hovering */
   background-color: #C4CED4;
-  /* Dark text when hovering */
   color: #1a1a1a;
 }
 

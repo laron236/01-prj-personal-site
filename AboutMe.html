@@ -2,67 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sean Heller | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Learn about Sean Heller, an Information Science graduate from USF focused on UX/UI design and web development."
+  >
+  <title>About Me | Sean Heller</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <!-- Header with Logos and Photo -->
+<body id="top">
+  <!-- Header -->
   <header>
-    <!-- 
-      Left logo image 
-      Make sure the file "spurs.png" is inside a folder named "img" in your project.
-      If the image does not show, check the file name and folder location.
-    -->
-    <img src="./img/spurs.png" alt="Spurs Logo" class="logo left">
-    <!-- 
-      Right logo image 
-      Make sure "usf.png" is also in the "img" folder.
-    -->
-    <img src="./img/usf.png" alt="USF Logo" class="logo right">
-    <!-- 
-      Profile photo 
-      Check that "profile.jpg" is in the "img" folder.
-    -->
-    <img src="./img/profile.jpg" alt="Sean Heller Photo" class="profile-pic">
+    <img src="./img/spurs.png" alt="San Antonio Spurs logo" class="logo left">
+    <img src="./img/usf.png" alt="University of South Florida logo" class="logo right">
+    <img src="./img/profile.jpg" alt="Sean Heller" class="profile-pic">
+
     <h1>Sean Heller</h1>
-    <p>Web Development Student at USF</p>
+    <p>Information Science Graduate | UX/UI Design &amp; Web Development</p>
   </header>
 
   <!-- Navigation -->
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <!-- Link to contact page -->
+    <a href="AboutMe.html" aria-current="page">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
     <a href="contact.html">Contact</a>
-    <!-- Link to local resume PDF -->
-    <a href="./resume.pdf" target="_blank">Resume</a>
+    <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
   </nav>
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>As I approach graduation with a Bachelor of Science in Information Science (BSIS) in May 2026, I am focused on transitioning from college into a professional career in software engineering and web-focused technology roles. My education and applied experience have shaped me into what I consider a dual threat professional. I understand how information is created, structured, evaluated, and used, and I apply that understanding directly when designing and building digital systems. With a concentration in web development, I have learned to connect information science principles with hands-on technical implementation, allowing me to create technology that is both functional and user centered. This extended bio highlights the experiences, skills, and goals that define my professional path as I prepare to enter the field.</p>
-    <p>Throughout the BSIS program, I developed a strong foundation in information science and user-centered thinking. My coursework emphasized how people seek, interpret, and interact with information across different environments, as well as how data evolves into meaningful knowledge. Through research-driven assignments and analytical projects, I strengthened my ability to evaluate sources, synthesize complex information, and apply theoretical frameworks to real-world problems. This perspective has deeply influenced how I approach technological development, encouraging me to design systems that are intuitive, accessible, and aligned with user needs.</p>
-    <p>In parallel, my studies provided extensive exposure to the technical systems that support modern digital environments. I gained an end-to-end understanding of how networks operate, how data is transmitted and stored, and how reliability, performance, and security factors into system design. I also developed a solid foundation in database concepts, including relational modeling, structured query language, and effective data organization. These experiences strengthened my understanding of the back-end systems that power applications and reinforced the importance of building software on well-designed technical foundations.</p>
-    <p>My concentration in web development allowed me to bring these information and systems concepts together in practical ways. I developed front-end and full-stack skills through hands-on projects that required designing, structuring, and building complete websites from the ground up. This included creating responsive layouts, validating user input, integrating databases, and developing server-side functionality. Through iterative projects and real-world style workflows, I gained a full understanding of how modern websites are planned, built, and maintained, from interface design to persistent data storage.</p>
-    <p>Alongside development, I cultivated a strong interest in user experience and interaction design. I explored how cognitive, social, and emotional factors influence the way people interact with technology, and how thoughtful interface design can improve usability and engagement. By applying design thinking principles and usability evaluation methods, I learned to analyze existing interfaces and design more effective, user-focused solutions. These skills are especially relevant to my interest in web development, automotive UX/UI design, and infotainment systems, where usability and system performance must work seamlessly together.</p>
-    <p>One of the most impactful components of my academic journey was my participation in a Career Accelerator Program, which significantly strengthened my practical web development skills and professional readiness. Through this program, I completed all of the major projects showcased on my personal website, gaining hands-on, real-world experience beyond traditional coursework. I worked in both team-based and individual environments, collaborating with peers from diverse backgrounds and across different countries. This experience helped me develop stronger communication, collaboration, and project management skills while adapting to real deadlines and expectations. I also earned multiple certifications through the program, reinforcing my technical skills and commitment to continuous learning.</p>
-    <p>Across my academic and applied experiences, I have built a growing technical skill set that includes front-end and full-stack web development, information architecture, database fundamentals, and system analysis. I am comfortable working with HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Java, and common development tools, and I continue to strengthen these skills through ongoing coursework and independent learning. I am particularly drawn to front-end development and UX/UI design, but I also recognize the importance of back-end systems, data handling, and performance. As part of my continued growth, I plan to expand my skill set by learning Python and C++, which are widely used in software engineering, data processing, and automotive or embedded systems.</p>
-    <p>Looking ahead, my career goals include working in software engineering, web development, automotive UX/UI design, or infotainment software engineering roles, where technology directly shapes user experiences. I am especially interested in positions that allow me to combine interface design with underlying system logic, leveraging both my information science background and technical development skills. As I gain professional experience and financial stability, I plan to pursue a master’s degree within the next two to five years to further specialize and advance my career. While I am realistic about beginning in an entry-level role, I have strong long-term ambitions for continuous learning, professional growth, and contributing to innovative, user-centered software solutions.</p>
-  </section>
-  
-   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sean Heller. All rights reserved.</p>
-    <!-- 
-      Footer logo image 
-      This should also be in the "img" folder.
-    -->
-    <img src="./img/spurs.png" alt="Spurs Logo" class="footer-logo">
-    <!-- Back to top button -->
-    <p>
-      <a href="#" class="back-to-top">Back to Top</a>
-    </p>
-  </footer>
 
+  <main>
+    <!-- Introduction -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+
+      <p>
+        Hi, I’m Sean Heller, an Information Science graduate from the
+        University of South Florida—Go Bulls! I concentrated in Web
+        Development Technologies and am focused on UX/UI design and web
+        development. I especially enjoy frontend work, where I can combine
+        creativity and problem-solving to build clean, functional, and
+        user-centered digital experiences. I’m also learning more about
+        backend development to broaden my skills.
+      </p>
+    </section>
+
+    <!-- Background -->
+    <section class="about-section">
+      <h2>My Background</h2>
+
+      <p>
+        I’ve always enjoyed building things with my hands. Before college,
+        I pictured myself becoming an engineer or architect, but starting
+        college in 2020 took me in a different direction. It was a
+        challenging time, but it also gave me the chance to discover coding.
+        I found that I loved turning ideas into something people could use,
+        working through problems, and seeing a project come together.
+      </p>
+
+      <p>
+        That interest led me to pursue Information Science, where I built a
+        foundation in web development, research, information organization,
+        and user-centered design.
+      </p>
+    </section>
+
+    <!-- Current focus -->
+    <section class="about-section about-focus">
+      <h2>What I’m Focused On</h2>
+
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h3>UX/UI Design</h3>
+          <p>
+            I’m developing my design process through UX coursework and a
+            case study, from understanding user needs to organizing
+            information and designing clear interfaces.
+          </p>
+        </div>
+
+        <div class="focus-card">
+          <h3>Frontend Development</h3>
+          <p>
+            I enjoy building responsive websites and interactive projects,
+            then refining how they look and work. I’m also learning more
+            about backend development to understand what supports the
+            experience behind the scenes.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        I’m continuing to strengthen both areas through hands-on projects,
+        certifications, and portfolio work. Graduating didn’t mean I was
+        done learning—I believe there’s always something new to explore.
+      </p>
+    </section>
+
+    <!-- Personal interests -->
+    <section class="about-section about-personal">
+      <h2>Outside of Work</h2>
+
+      <p>
+        Outside of coding and learning, I enjoy spending time with my family
+        and girlfriend, taking road trips, playing basketball and video
+        games, going bowling, and listening to music. There’s a good chance
+        I have music on while I’m working on my next project.
+      </p>
+    </section>
+
+    <!-- Closing invitation -->
+    <section class="about-section about-cta">
+      <h2>Let’s Connect</h2>
+
+      <p>
+        I’m pursuing entry-level opportunities in UX/UI design and web
+        development. If you’d like to talk about my work or connect, I’d
+        love to hear from you.
+      </p>
+
+      <a href="contact.html" class="secondary-button">Get in Touch</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Sean Heller. All rights reserved.</p>
+    <img src="./img/spurs.png" alt="San Antonio Spurs logo" class="footer-logo">
+    <p><a href="#top" class="back-to-top">Back to Top ↑</a></p>
+  </footer>
 </body>
 </html>
