@@ -1,74 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Connect with Sean Heller about entry-level UX/UI design, frontend development, and technology opportunities."
+  >
+
   <title>Contact | Sean Heller</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <!-- Header with Logos and Photo (same as index.html) -->
+<body id="top">
+
+  <!-- Header -->
   <header>
-    <!-- Left logo image -->
-    <img src="./img/spurs.png" alt="Spurs Logo" class="logo left">
-    <!-- Right logo image -->
-    <img src="./img/usf.png" alt="USF Logo" class="logo right">
-    <!-- Profile photo -->
-    <img src="./img/profile.jpg" alt="Sean Heller Photo" class="profile-pic">
+    <img
+      src="./img/spurs.png"
+      alt="San Antonio Spurs logo"
+      class="logo left"
+    >
+
+    <img
+      src="./img/usf.png"
+      alt="University of South Florida logo"
+      class="logo right"
+    >
+
+    <img
+      src="./img/profile.jpg"
+      alt="Sean Heller"
+      class="profile-pic"
+    >
+
     <h1>Sean Heller</h1>
-    <p>Web Development Student at USF</p>
+
+    <p>
+      Information Science Graduate |
+      UX/UI Design &amp; Frontend Development
+    </p>
   </header>
 
   <!-- Navigation -->
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <!-- Link to local resume PDF -->
-    <a href="./resume.pdf" target="_blank">Resume</a>
+    <a href="AboutMe.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+
+    <a
+      href="./resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Résumé
+    </a>
   </nav>
 
-  <!-- Contact form section -->
-  <section id="contact-form">
-    <h2>Contact Me</h2>
-    <!-- Form uses mailto for a simple setup. For reliable delivery use a backend or form service. -->
-    <form method="POST" action="mailto:seanheller@usf.edu" enctype="text/plain">
-      
-      <!-- Name field -->
-      <label for="name">Name</label>
-      <input type="text" id="name" name="Name" required>
+  <!-- Main Content -->
+  <main>
 
-      <!-- Email field -->
-      <label for="email">Email</label>
-      <input type="email" id="email" name="Email" required>
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Let’s Connect</h2>
 
-      <!-- Company field -->
-      <label for="company">Company</label>
-      <input type="text" id="company" name="Company">
+        <p class="section-intro">
+          I’m pursuing entry-level opportunities in UX/UI design,
+          frontend web development, and technology. Whether you’d like
+          to discuss an opportunity, ask about my projects, or make a
+          professional connection, I’d be glad to hear from you.
+        </p>
+      </div>
 
-      <!-- Topic field -->
-      <label for="topic">Topic</label>
-      <input type="text" id="topic" name="Topic" required>
+      <div class="contact-links">
 
-      <!-- Message field -->
-      <label for="message">Message</label>
-      <textarea id="message" name="Message" rows="6" required></textarea>
+        <!-- Email -->
+        <a
+          href="mailto:seanlaron02@gmail.com"
+          class="contact-link contact-email"
+        >
+          <span class="contact-label">Email</span>
+          <span class="contact-value">seanlaron02@gmail.com</span>
+        </a>
 
-      <!-- Submit button -->
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/sean-heller-dev/"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Connect with me</span>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/laron236"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">Explore my code</span>
+        </a>
+
+        <!-- Résumé -->
+        <a
+          href="./resume.pdf"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-label">Résumé</span>
+          <span class="contact-value">View my résumé (PDF)</span>
+        </a>
+
+      </div>
+
+      <p class="contact-note">
+        The email link opens your email application. You can also copy
+        seanlaron02@gmail.com into your preferred email service.
+        LinkedIn, GitHub, and résumé links open in a new tab.
+      </p>
+    </section>
+
+    <!-- Projects Link -->
+    <section class="contact-section">
+      <h2>Explore My Work</h2>
+
+      <p>
+        Take a look at my completed web projects and the UX case study
+        I’m currently developing.
+      </p>
+
+      <a href="projects.html" class="secondary-button">
+        View My Projects
+      </a>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Sean Heller. All rights reserved.</p>
-    
-    <!-- Footer logo -->
-    <img src="./img/spurs.png" alt="Spurs Logo" class="footer-logo">
-    
-    <!-- Contact links -->
+    <p>&copy; 2026 Sean Heller. All rights reserved.</p>
+
+    <img
+      src="./img/spurs.png"
+      alt="San Antonio Spurs logo"
+      class="footer-logo"
+    >
+
     <p>
-      <a href="mailto:seanlaron02@gmail.com">Email</a> | 
-      <a href="https://github.com/laron236">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/sean-h-871997302">LinkedIn</a>
+      <a href="#top" class="back-to-top">Back to Top ↑</a>
     </p>
   </footer>
 
